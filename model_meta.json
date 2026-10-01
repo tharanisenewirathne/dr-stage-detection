@@ -1,0 +1,33 @@
+{
+  "backbone": "EfficientNetB3",
+  "preprocessing": "bengraham",
+  "img_size": 224,
+  "class_names": [
+    "No_DR",
+    "Mild",
+    "Moderate",
+    "Severe",
+    "Proliferative_DR"
+  ],
+  "last_conv_layer": "top_activation",
+  "use_tta": false,
+  "test_metrics": {
+    "accuracy": 0.7553648068669528,
+    "balanced_acc": 0.5918609489188074,
+    "precision_macro": 0.5660577618606777,
+    "recall_macro": 0.5918609489188074,
+    "f1_macro": 0.5662136339382042,
+    "f1_weighted": 0.7576281706919025,
+    "qwk": 0.8137292418909344,
+    "auc_macro": 0.9162615351979913,
+    "anyDR_sens": 0.9469026548672567,
+    "anyDR_spec": 0.9694444444444444,
+    "referable_sens": 0.8154981549815498,
+    "referable_spec": 0.9485981308411215
+  },
+  "tensorflow": "2.20.0",
+  "keras": "3.13.2",
+  "n_train": 2443,
+  "n_val": 349,
+  "n_test": 699
+}
