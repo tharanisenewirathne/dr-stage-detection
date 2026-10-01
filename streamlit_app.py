@@ -209,7 +209,10 @@ st.warning("⚕️ Research prototype for a university computer-vision coursewor
            "do not use for diagnosis. Always consult a qualified eye-care professional.")
 
 ex_dir = os.path.join(HERE, "examples")
-examples = sorted(f for f in os.listdir(ex_dir) if f.lower().endswith((".png", ".jpg", ".jpeg"))) if os.path.isdir(ex_dir) else []
+if not os.path.isdir(ex_dir):          # example images may also sit next to this script (stage0_*.png ...)
+    ex_dir = HERE
+examples = sorted(f for f in os.listdir(ex_dir)
+                  if f.lower().startswith("stage") and f.lower().endswith((".png", ".jpg", ".jpeg")))
 
 left, right = st.columns(2)
 with left:
