@@ -3,7 +3,7 @@
 Five-stage diabetic retinopathy (DR) grading from colour fundus photographs, using image preprocessing, data augmentation, class balancing and ImageNet-pretrained CNNs. Includes Grad-CAM explainability and a deployed web app.
 
 - **Notebook:** `dr_stage_detection.ipynb` (Kaggle, GPU T4)
-- **Web app:** `app/` (Streamlit, hosted free on Streamlit Community Cloud) — _add your app link here_
+- **Web app:** `app/` (Streamlit, hosted free on Streamlit Community Cloud) — [_https://dr-stage-screening.streamlit.app/_]
 - **Demo video:** _add your video link here_
 
 ## Dataset
